@@ -1,0 +1,51 @@
+.container{
+    max-width: 1024px;
+    margin:auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-brand{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+
+#header nav{
+    background-color: #06d6a0;
+    padding:1em 0;
+    width: 100%;
+}
+#site-main .container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td,.table th{
+    padding:0.75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid rgb(63, 62, 62);
+}
+
+.table td>a.btn{
+    padding:.3em 1em;
+    font-size:1.1em;
+    margin:0.2em;
+}

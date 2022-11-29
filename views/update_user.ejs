@@ -1,0 +1,76 @@
+<!--include header-->
+<%-include('include/_header')%>
+    <!--/include header-->
+
+
+    <!--main site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/">All users</a>
+                </div>
+            </div>
+            <div>
+                <h1>Update User</h1>
+            </div>
+            <!-- add user form -->
+            <!--form handling-->
+            <form method="POST" id="update_user">
+                <div class="new_user">
+                    <div class="form_group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="hidden" name="id" value="<%= user._id%>">
+                        <input type="text" name="name" value="<%= user.name %>" >
+
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="text-light">Email</label>
+                        <input type="text" name="email" value="<%=user.email %>" >
+
+                    </div>
+                    <div class="form_group">
+                        <label for="gender" class="text-light">Gender</label>
+                        <div class="radio inline">
+                            <input type="radio" name="gender" value="Male">
+                            <label for="gender" class="text-light">Male</label>
+
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="gender" value="Female">
+                            <label for="gender" class="text-light">Female</label>
+
+                        </div>
+
+                    </div>
+                    <div class="form_group">
+                        <label for="status" class="text-light">Status</label>
+                        <div class="radio inline">
+                            <input type="radio" name="status" value="Active">
+                            <label for="status" class="text-light">Active</label>
+
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="status" value="Inactive">
+                            <label for="status" class="text-light">Inactive</label>
+
+                        </div>
+
+                        <div class="form_group">
+                            <button type="submit">Save</button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--/main site-->
+
+
+
+
+    <!--include footer-->
+    <%-include('include/_footer')%>
+
+        <!--/include footer-->
