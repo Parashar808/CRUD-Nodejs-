@@ -32,12 +32,12 @@
                     <div class="form_group">
                         <label for="gender" class="text-light">Gender</label>
                         <div class="radio inline">
-                            <input type="radio" name="gender" value="Male">
+                            <input type="radio" name="gender" value="Male" <%= user.gender =='Male'?'checked':""%>>
                             <label for="gender" class="text-light">Male</label>
 
                         </div>
                         <div class="radio inline">
-                            <input type="radio" name="gender" value="Female">
+                            <input type="radio" name="gender" value="Female" <%= user.gender =='Female'?'checked':""%>>
                             <label for="gender" class="text-light">Female</label>
 
                         </div>
@@ -46,12 +46,12 @@
                     <div class="form_group">
                         <label for="status" class="text-light">Status</label>
                         <div class="radio inline">
-                            <input type="radio" name="status" value="Active">
+                            <input type="radio" name="status" value="Active" <%= user.status =='Active'?'checked':""%>>
                             <label for="status" class="text-light">Active</label>
 
                         </div>
                         <div class="radio inline">
-                            <input type="radio" name="status" value="Inactive">
+                            <input type="radio" name="status" value="Inactive" <%= user.status =='Inactive'?'checked':""%>>
                             <label for="status" class="text-light">Inactive</label>
 
                         </div>
